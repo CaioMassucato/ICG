@@ -1,4 +1,4 @@
 all:
 	flex parser.l
-	yacc parser.y
-	gcc y.tab.c -ll -w
+	yacc -d parser.y
+	gcc -o example lex.yy.c y.tab.c -ll -w
