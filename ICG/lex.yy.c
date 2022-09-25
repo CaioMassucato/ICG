@@ -991,17 +991,17 @@ return PRINT;
 case 39:
 YY_RULE_SETUP
 #line 48 "parser.l"
-{yylval.str=strdup(yytext); return ID;}
+{yylval.str=strdup(yytext);   return ID;}
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
 #line 49 "parser.l"
-{yylval.str=strdup(yytext);return NUM;}
+{yylval.str=strdup(yytext);                 return NUM;}
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
 #line 50 "parser.l"
-{yylval.str=strdup(yytext); return REAL;}
+{yylval.str=strdup(yytext);         return REAL;}
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
